@@ -3,33 +3,31 @@
 /**
  * main - Entry point
  *
- * Description: print all possible different.
- *
  * Return: Always 0 (Succes)
  */
 
 int main(void)
 {
-	int m;
-	int o;
-	int p;
+	int n;
+	int i;
+	int h;
 
-	for (p = 0 ; p != 8 ; p++)
+	for (h = 0 ; h != 8 ; h++)
 	{
-		for (m = p + 1 ; m != 9 ; m++)
+		for (n = h + 1 ; n != 9 ; n++)
 		{
-			o = m + 1;
+			i = n + 1;
 			do {
-				putchar('0' + p);
-				putchar('0' + m);
-				putchar('0' + o);
-				if (p != 7)
+				putchar('0' + h);
+				putchar('0' + n);
+				putchar('0' + i);
+				if (h != 7)
 				{
 					putchar(',');
 					putchar(32);
 				}
 				i++;
-			} while (o != 10);
+			} while (i != 10);
 		}
 	}
 	putchar('\n');
