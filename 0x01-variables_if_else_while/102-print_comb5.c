@@ -3,41 +3,41 @@
 /**
  * main - Entry point
  *
- * Description: print all the differences.
- *
- * Return: Always 0 (success)
+ * Return: Always 0 (Succes)
  */
 
 int main(void)
 {
-	int h;
-	int n;
-	int e;
-	int s;
+	int tho;
+	int hun;
+	int ten;
+	int bas;
 
-	for (h = 0 ; h < 10 ; h++)
+for ( tho = 0 ; tho < 10 ; tho++)
+{	
+
+	for (hun = 0 ; hun <= 10 ; hun++)
 	{
-		for (n = 0 ; n <= 10 ; n++)
+	
+		for (ten = 0 ; ten < 10 ; ten++)
 		{
-			for (e = 0 ; e < 10 ; e++)
+			for ( bas = 0 ; bas < 10 ; bas++)
 			{
-				for (s = 0 ; s < 10 ; s++)
+				putchar('0' + tho);
+				putchar('0' + hun);
+				putchar(32);
+				putchar('0' + ten);
+				putchar('0' + bas);
+				if (!(tho == 9 && hun == 8))
 				{
-					putchar('0' + h);
-					putchar('0' + n);
+					putchar(',');
 					putchar(32);
-					putchar('0' + e);
-					putchar('0' + s);
-					if (!(h == 9 && n == 8))
-					{
-						putchar(',');
-						putchar(32);
-					}
-					s++;
 				}
+				bas++;
 			}
 		}
 	}
+}
 	putchar('\n');
 	return (0);
 }
