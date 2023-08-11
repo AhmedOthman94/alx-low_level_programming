@@ -3,29 +3,34 @@
 /**
  * main - Entry point
  *
- * Return: Always 0 (success)
+ * Return: Always 0 (Succes)
  */
 
 int main(void)
 {
-        int digit1, digit2, digit3;
-  
-	      for (digit1 = 0; digit1 < 8; digit1++)
-	      {
-		            for (digit2 = digit1 + 1; digit2 < 9; digit2++)
-		            {
-			                  for (digit3 = digit2 + 1; digit3 < 10; digit3++)
-			                  {
-                          			putchar((digit1 % 10) + '0');
-                          			putchar((digit2 % 10) + '0');
-                          			putchar((digit3 % 10) + '0');
-                          			if (digit1 == 7 && digit2 == 8 && digit3 == 9)
-                          			        continue;
-                          				putchar(',');
-                          				putchar(' ');
-                        }
-                 }
-          }     
-          putchar('\n');
-          return (0);
+	int m;
+	int o;
+	int p;
+
+	for (p = 0 ; p != 8 ; p++)
+	{
+		for (m = p + 1 ; m != 9 ; m++)
+		{
+			o = m + 1;
+			do {
+				putchar('0' + p);
+				putchar('0' + m);
+				putchar('0' + o);
+				if (p != 7)
+				{
+					putchar(',');
+					putchar(32);
+				}
+				i++;
+			} while (o != 10);
+		}
+	}
+	putchar('\n');
+	return (0);
 }
+
