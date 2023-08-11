@@ -3,6 +3,8 @@
 /**
  * main - Entry point
  *
+ * Description: print all possible different.
+ *
  * Return: Always 0 (Succes)
  */
 
