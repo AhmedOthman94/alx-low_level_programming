@@ -1,18 +1,17 @@
-#include"main.h"
-
+#include "main.h"
+#include <ctype.h>
 /**
- * _isalpha - checks if character is a letter
- *            both lowercase or uppercase
+ * _isalpha - check if the given character is lower case.
+ * @c: character to test.
  *
- * @c: takes input from other functions.
- *
- * Return: 1 is c if true else 0
-*/
-
-int _isalpha(int c)
+ * Return: 1 (True) else 0 (False)
+ */
+int _isalpha(char c)
 {
-	if (c >= 97 && c <= 122 &&
-	    c >= 65 && c >= 90)
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+	{
 		return (1);
+	}
 	return (0);
 }
+
