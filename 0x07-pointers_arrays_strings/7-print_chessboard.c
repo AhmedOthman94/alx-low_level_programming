@@ -1,22 +1,22 @@
 #include "main.h"
 
 /**
- * print_chessboard
- * @a: array
+ * print_chessboard - print chessboard
  *
- * Return: chessboard.
+ * @a: matrix
+ *
+ * Return: Always 0 (Success)
 */
 
 void print_chessboard(char (*a)[8])
 {
-	int m, n;
+	int m;
+	int n;
 
-	for (m = 0; m <= 7; m++)
+	for (m = 0; m < 8; m++)
 	{
-		for (n = 0; n <= 7; n++)
-		{
+		for (n = 0; n < 8; n++)
 			_putchar(a[m][n]);
-		}
 		_putchar('\n');
 	}
 }
