@@ -2,8 +2,8 @@
 
 /**
  * _strstr - Entry point
- * @haystack: input
- * @needle: input
+ * @haystack: sorce
+ * @needle: search
  * Return: Always 0 (Success)
 */
 
@@ -17,7 +17,7 @@ char *_strstr(char *haystack, char *needle)
 		while (*m == *n && *n != '\0')
 		{
 			m++;
-			m++;
+			n++;
 		}
 
 		if (*n == '\0')
