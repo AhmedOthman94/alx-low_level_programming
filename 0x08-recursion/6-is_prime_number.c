@@ -34,5 +34,5 @@ int prime1(int n, int j)
 	{
 		return (0);
 	}
-	return (actual_prime(n, j - 1));
+	return (prime1(n, j - 1));
 }
