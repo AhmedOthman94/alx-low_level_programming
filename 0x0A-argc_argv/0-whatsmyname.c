@@ -2,16 +2,15 @@
 #include "main.h"
 
 /**
- * main - that can print program name with a new line
- * @argc: int
- * @argv: list
+ * main - that can print name of a program
+ * @argc: number
+ * @argv: array
  *
  * Return: Always 0 (Success)
 */
 
-int main(int argc, char *argv[])
+int main(int argc __attribute__((unused)), char *argv[])
 {
-	(void)argc;
-	printf("%s\n", argv[0]);
+	printf("%s\n", *argv);
 	return (0);
 }
