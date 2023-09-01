@@ -1,28 +1,28 @@
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
- * main - print multi two numbers
+ * main - that can multiply the two numbers
+ *
  * @argc: number
  * @argv: array
  *
- * Return: 0 (Sucess)
+ * Return: 0 (Success)
 */
 
 int main(int argc, char *argv[])
 {
-	int m, s = 1;
+	int n;
 
 	if (argc != 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	for (m = 1; m < argc; m++)
+	else
 	{
-		s *= atoi(argv[m]);
+		n = (atoi(argv[1]) * atoi(argv[2]));
+		printf("%d\n", n);
 	}
-	printf("%d\n", sum);
 	return (0);
 }
-
